@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="42">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Money"</Description>
+      <VariableType>Double</VariableType>
+      <Address>1834CBA20A0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Money2"</Description>
+      <VariableType>8 Bytes</VariableType>
+      <Address>22FD94E61A0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Money3"</Description>
+      <VariableType>8 Bytes</VariableType>
+      <Address>192ED7663A0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"pointerscan result"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Tower-Win64-Shipping.exe"+03698FF0</Address>
+      <Offsets>
+        <Offset>0</Offset>
+        <Offset>48</Offset>
+        <Offset>E0</Offset>
+        <Offset>230</Offset>
+        <Offset>268</Offset>
+        <Offset>930</Offset>
+        <Offset>30</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Money :mov rax,[rax+rdx*8]</Description>
+      <AddressString>Tower-Win64-Shipping.exe+8BCA2F</AddressString>
+      <Before>
+        <Byte>41</Byte>
+        <Byte>48</Byte>
+        <Byte>0F</Byte>
+        <Byte>B6</Byte>
+        <Byte>D2</Byte>
+      </Before>
+      <Actual>
+        <Byte>48</Byte>
+        <Byte>8B</Byte>
+        <Byte>04</Byte>
+        <Byte>D0</Byte>
+      </Actual>
+      <After>
+        <Byte>C3</Byte>
+        <Byte>48</Byte>
+        <Byte>C7</Byte>
+        <Byte>C0</Byte>
+        <Byte>FF</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+</CheatTable>
